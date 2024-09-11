@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1st YEAR CS STUDENT PROFILES</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #e11f0d, #e64104);
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #fff;
+            font-size: 3em;
+            animation: moveAndBounce 5s ease-in-out infinite;
+            background: linear-gradient(135deg, #ff9a9e, #f4a8a4);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+        @keyframes moveAndBounce {
+            0% {
+                transform: translateX(-100%);
+                opacity: 0;
+            }
+            50% {
+                transform: translateX(50%);
+                opacity: 1;
+            }
+            100% { 
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+        .profile-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            perspective: 1000px;
+        }
+        .profile-card {
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+            overflow: hidden;
+            text-align: center;
+            padding: 20px;
+            transition: transform 0.6s, box-shadow 0.6s, background-color 0.4s;
+            position: relative;
+            cursor: pointer;
+        }
+        .profile-card:hover {
+            transform: rotateY(10deg) scale(1.1);
+            box-shadow: 0 16px 32px rgba(0, 0, 0, 0.4);
+            background: linear-gradient(135deg, #d08311, #a2ce10);
+        }
+        .profile-card::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(45deg, #ffbf00, #ff6b6b);
+            opacity: 0.1;
+            transition: opacity 0.4s;
+        }
+        .profile-card:hover::before {
+            opacity: 0.4;
+        }
+        .profile-card img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid #060228;
+            transition: border-color 0.4s, transform 0.4s;
+        }
+        .profile-card img:hover {
+            border-color: #ffbf00;
+            transform: scale(1.1);
+        }
+        .profile-card h3 {
+            margin: 15px 0;
+            font-size: 1.4em;
+            color: #333;
+            animation: fadeIn 1s ease-in-out;
+        }
+        .profile-card p {
+            margin: 5px 0;
+            font-size: 1.1em;
+            color: #666;
+            animation: fadeIn 1.2s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>1ST YEAR CS STUDENT PROFILES</h1>
+        <div class="profile-grid">
+            <!-- Profile 1 -->
+            <div class="profile-card">
+                <img src="ppt.jpg" alt="Student Photo">
+                <h3>Mr.Ajjaiah P N</h3>
+            </div>
+
+            <div class="profile-card">
+                <img src="ppt.jpg" alt="Student Photo">
+                <h3>Ms.Anusha K p</h3>
+            </div>
+
+            <div class="profile-card">
+                <img src="ppt.jpg" alt="Student Photo">
+                <h3>Mr.Chandan R</h3>
+            </div>
+
+            <div class="profile-card">
+                <img src="ppt.jpg" alt="Student Photo">
+                <h3>Mr.Chinmay v</h3>
+            </div>
+
+            <div class="profile-card">
+                <img src="ppt.jpg" alt="Student Photo">
+                <h3>Mr.Deekshith M</h3> 
+            </div>
+
+            <div class="profile-card">
+                <img src="ppt.jpg" alt="Student Photo">
+                <h3>Mr.Dhanush G P</h3>
+            </div>
+
+            <div class="profile-card">
+                <img src="ppt.jpg" alt="Student Photo">
+                <h3>Mr.Dishanth S k</h3>
+            </div>
+
+            <div class="profile-card">
+                <img src="ppt.jpg" alt="Student Photo">
+                <h3>Ms.Divya M L</h3>
+            </div>
+
+            <div class="profile-card">
+                <img src="ppt.jpg" alt="Student Photo">
+                <h3>Ms.Harshitha Parashuram</h3>
+            </div>
+
+            <div class="profile-card">
+                <img src="hru.jpg" alt="Student Photo">
+                <h3>Ms.Hrukshita B S</h3>
+            </div>
+
+            <div class="profile-card">
+                <img src="ppt.jpg" alt="Student Photo">
+                <h3>Ms.Jaya Bai L</h3>
+            </div>
+
+            <div class="profile-card">
+                <img src="ppt.jpg" alt="Student Photo">
+                <h3>Mr.Jeevan B S</h3>
+            </div>
+
+            <div class="profile-card">
+                <img src="ppt.jpg" alt="Student Photo">
+                <h3>Ms.Jeevitha V</h3>
+            </div>
+
+            <div class="profile-card">
+                <img src="ppt.jpg" alt="Student Photo">
+                <h3>Ms.Lakshmi Sagar G</h3>
+            </div>
+
+            <div class="profile-card">
+                <img src="ppt.jpg" alt="Student Photo">
+                <h3>Mr.Mahamad Junaid</h3>
+            </div>
+
+            <div class="profile-card">
+                <img src="ppt.jpg" alt="Student Photo">
+                <h3>Mr.manu R</h3>
+            </div>
+
+            <div class="profile-card">
+                <img src="ppt.jpg" alt="Student Photo">
+                <h3>Mr.Mohammed Shahan ali<h3>
+            </div>
+
+            <div class="profile-card">
+                <img src="nanditha.jpg" alt="Student Photo">
+                <h3>Ms.Nanditha J</h3>
+            </div>
+
+            <div class="profile-card">
+                <img src="ppt.jpg" alt="Student Photo">
+                <h3>Mr.Nikhil Naik</h3>
+            </div>
+
+            <div class="profile-card">
+                <img src="ppt.jpg" alt="Student Photo">
+                <h3>Mr.Nishanth M R</h3>
+            </div>
+
+            <div class="profile-card">
+                <img src="noor.jpg" alt="Student Photo">
+                <h3>Ms.Noore Mujessim</h3>
+            </div>
+
+            <div class="profile-card">
+                <img src="ppt.jpg" alt="Student Photo">
+                <h3>Mr.P H Gangadhara</h3>
+            </div>
+
+            <div class="profile-card">
+                <img src="ppt.jpg" alt="Student Photo">
+                <h3>Mr.Praveen Kumar C</h3>
+            </div>
+
+            <div class="profile-card">
+                <img src="ppt.jpg" alt="Student Photo">
+                <h3>MR.Preetham E</h3>
+            </div>
+
+             <div class="profile-card">
+                <img src="rahima.jpg" alt="Student Photo">
+                <h3>Ms.Rahima</h3>
+            </div>
+
+            <div class="profile-card">
+                <img src="ppt.jpg" alt="Student Photo">
+                <h3>Ms.Ramya</h3>
+            </div>
+
+            <div class="profile-card">
+                <img src="ppt.jpg" alt="Student Photo">
+                <h3>Ms.renuka S</h3>
+            </div>
+
+            <div class="profile-card">
+                <img src="ppt.jpg" alt="Student Photo">
+                <h3>Ms.Sbiya Banu</h3>
+            </div>
+
+            <div class="profile-card">
+                <img src="ppt.jpg" alt="Student Photo">
+                <h3>Mr.Shivaraj C H</h3>
+            </div>
+
+            <div class="profile-card">
+                <img src="ppt.jpg" alt="Student Photo">
+                <h3>Mr.Shreyas K h</h3>
+            </div>
+
+            <div class="profile-card">
+                <img src="ppt.jpg" alt="Student Photo">
+                <h3>Mr.Tarun S</h3>
+            </div>
+
+            <div class="profile-card">
+                <img src="ppt.jpg" alt="Student Photo">
+                <h3>Ms.Tasleem Kouser</h3>
+            </div>
+
+            <div class="profile-card">
+                <img src="ppt.jpg" alt="Student Photo">
+                <h3>Mr.Thippeswamy B</h3>
+            </div>
+
+            <div class="profile-card">
+                <img src="ppt.jpg" alt="Student Photo">
+                <h3>Ms.Thriguna G A</h3>
+            </div>
+            <!-- Add more profiles here following the same structure -->
+        </div>
+    </div>
+</body>
+</html>

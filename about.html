@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Shri Kengappa Nayaka Government Polytechnic</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #f6d365 0%, #fda085 100%);
+            color: #333;
+            overflow-x: hidden;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+            overflow: hidden;
+        }
+
+        .logo {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+            animation: fadeInDown 1s ease-out forwards;
+        }
+
+        .logo img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 5px solid #fff;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .header {
+            background: url('college.jpg') no-repeat center center/cover;
+            height: 300px;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+            animation: slideInFromLeft 1s ease-out forwards;
+        }
+
+        @keyframes slideInFromLeft {
+            from {
+                transform: translateX(-100%);
+                opacity: 0;
+            }
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+
+        .header h1 {
+            font-size: 3rem;
+            background: rgba(0, 0, 0, 0.7);
+            padding: 15px 25px;
+            border-radius: 15px;
+            animation: pulse 1.5s infinite;
+        }
+
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.05);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        .about-content {
+            margin-top: 40px;
+            text-align: center;
+            animation: fadeIn 2s ease-in-out forwards;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .about-content h2 {
+            color: #ff6b6b;
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            position: relative;
+            display: inline-block;
+            animation: swingIn 1s ease-out forwards;
+        }
+
+        @keyframes swingIn {
+            0% {
+                transform: rotate(-15deg);
+                opacity: 0;
+            }
+            50% {
+                transform: rotate(10deg);
+                opacity: 1;
+            }
+            100% {
+                transform: rotate(0deg);
+                opacity: 1;
+            }
+        }
+
+        .about-content p {
+            font-size: 1.2rem;
+            text-align: justify;
+            margin-bottom: 30px;
+            color: #444;
+            animation: fadeInUp 1.5s ease-out forwards;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .mission, .vision {
+            background: #fff;
+            padding: 30px;
+            margin: 30px 0;
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+            animation: zoomIn 2s ease-out forwards;
+        }
+
+        @keyframes zoomIn {
+            from {
+                transform: scale(0.5);
+                opacity: 0;
+            }
+            to {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+
+        .mission h3, .vision h3 {
+            font-size: 2rem;
+            margin-bottom: 15px;
+            color: #ff6348;
+            animation: bounce 2s infinite;
+        }
+
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {
+                transform: translateY(0);
+            }
+            40% {
+                transform: translateY(-30px);
+            }
+            60% {
+                transform: translateY(-15px);
+            }
+        }
+
+        .mission p, .vision p {
+            font-size: 1.1rem;
+            color: #555;
+        }
+
+        .footer {
+            background: #2d3436;
+            padding: 15px 0;
+            color: #fff;
+            text-align: center;
+            font-size: 1rem;
+            margin-top: 30px;
+            animation: fadeInUp 2s ease-out forwards;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <img src="collegelogo.jpeg" alt="College Logo">
+        </div>
+
+        <div class="header">
+            <h1>About Shri Kengappa Nayaka Government Polytechnic</h1>
+        </div>
+
+        <div class="about-content">
+            <h2>Our Journey</h2>
+            <p>
+                Established in 2022, Shri Kengappa Nayaka Government Polytechnic has become a cornerstone of technical education in the region. Our institution is dedicated to providing high-quality education, fostering innovation, and preparing students to excel in their careers.
+            </p>
+            <p>
+                Over the years, we have expanded our course offerings to include a wide range of diploma programs, each tailored to meet the evolving demands of the industry. Our committed faculty, state-of-the-art infrastructure, and strong industry connections ensure that our students receive the best possible education and hands-on experience.
+            </p>
+        </div>
+
+        <div class="mission">
+            <h3>Our Mission</h3>
+            <p>
+                "Our mission is to provide quality technical education and holistic development opportunities to rural polytechnic students. Through innovative teaching methodologies, industry-aligned curriculum, and hands-on training, we aim to equip our students with practical skills and ethical values. We are committed to nurturing a learning environment that encourages creativity, critical thinking, and social responsibility, preparing our graduates to excel in diverse fields and contribute meaningfully to society."
+            </p>
+        </div>
+
+        <div class="vision">
+            <h3>Our Vision</h3>
+            <p>
+                "To empower rural polytechnic college students with knowledge, skills, and opportunities that faster innovation, entrepreneurship, and sustainable development in their communities and beyond."
+            </p>
+        </div>
+    </div>
+
+    <div class="footer">
+        &copy; 2024 Shri Kengappa Nayaka Government Polytechnic. All rights reserved.
+    </div>
+</body>
+</html>

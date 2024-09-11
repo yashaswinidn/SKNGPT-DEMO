@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2ND YEAR CS Student Profiles</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #16ca1c, #d78315ae);
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #fff;
+            font-size: 3em;
+            animation: moveAndBounce 5s ease-in-out infinite;
+            background: linear-gradient(135deg, #df2808, #ca15cd);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+        @keyframes moveAndBounce {
+            0% {
+                transform: translateX(-100%);
+                opacity: 0;
+            }
+            50% {
+                transform: translateX(50%);
+                opacity: 1;
+            }
+            100% {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+        .profile-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            perspective: 1000px;
+        }
+        .profile-card {
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+            overflow: hidden;
+            text-align: center;
+            padding: 20px;
+            transition: transform 0.6s, box-shadow 0.6s, background-color 0.4s;
+            position: relative;
+            cursor: pointer;
+        }
+        .profile-card:hover {
+            transform: rotateY(10deg) scale(1.1);
+            box-shadow: 0 16px 32px rgba(0, 0, 0, 0.4);
+            background: linear-gradient(135deg, #048569, #4fc4d6);
+        }
+        .profile-card::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(45deg, #ffbf00, #ff6b6b);
+            opacity: 0.1;
+            transition: opacity 0.4s;
+        }
+        .profile-card:hover::before {
+            opacity: 0.4;
+        }
+        .profile-card img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid #ff6b6b;
+            transition: border-color 0.4s, transform 0.4s;
+        }
+        .profile-card img:hover {
+            border-color: #ffbf00;
+            transform: scale(1.1);
+        }
+        .profile-card h3 {
+            margin: 15px 0;
+            font-size: 1.4em;
+            color: #333;
+            animation: fadeIn 1s ease-in-out;
+        }
+        .profile-card p {
+            margin: 5px 0;
+            font-size: 1.1em;
+            color: #666;
+            animation: fadeIn 1.2s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>2ND YEAR CS STUDENT PROFILES</h1>
+        <div class="profile-grid">
+            <!-- Profile 1 -->
+            <div class="profile-card">
+                <img src="tilaka.jpg" alt="Student Photo">
+                <h3>Mr Tilak Y</h3>
+                <p>USN: 710CS22047</p>
+                <p>CGPA: 8.5</p>
+            </div>
+
+            <div class="profile-card">
+                <img src="abh.jpg" alt="Student Photo">
+                <h3>Mr Abhilasha D</h3>
+                <p>USN: 710CS23001</p>
+                <p>CGPA: 8.7</p>
+            </div>
+            
+            <div class="profile-card">
+                <img src="ABHIII2.jpg" alt="Student Photo">
+                <h3>Mr Abhishek MR</h3>
+                <p>USN: 710CS23002</p>
+                <p>CGPA: 8.7</p>
+            </div>
+
+            <div class="profile-card">
+                <img src="ppt.jpg" alt="Student Photo">
+                <h3>Mr Akhil T</h3>
+                <p>USN: 710CS23004</p>
+                <p>CGPA: 8.5</p>
+            </div>
+
+            <div class="profile-card">
+                <img src="anas raza.jpg" alt="Student Photo">
+                <h3>Mr Anas Raza</h3>
+                <p>USN: 710CS23006</p>
+                <p>CGPA: 8.7</p>
+            </div>
+
+            <div class="profile-card">
+                <img src="darshan.jpg" alt="Student Photo">
+                <h3>Mr Darshan TD</h3>
+                <p>USN: 710CS23008</p>
+                <p>CGPA: 8.5</p>
+            </div>
+
+            <div class="profile-card">
+                <img src="DEEPU.jpg" alt="Student Photo">
+                <h3>Mr Deepak MR</h3>
+                <p>USN: 710CS23009</p>
+                <p>CGPA: 8.7</p>
+            </div>
+
+            <div class="profile-card">
+                <img src="gagana.jpg" alt="Student Photo">
+                <h3>Ms Gagana SU</h3>
+                <p>USN: 710CS23010</p>
+                <p>CGPA: 8.5</p>
+            </div>
+            
+            <div class="profile-card">
+                <img src="ganesh.jpg" alt="Student Photo">
+                <h3>Ms Ganesh A</h3>
+                <p>USN: 710CS23011</p>
+                <p>CGPA: 8.5</p>
+            </div>
+
+            <div class="profile-card">
+                <img src="GANE2.jpg" alt="Student Photo">
+                <h3>Mr Ganesha R</h3>
+                <p>USN: 710CS23012</p>
+                <p>CGPA: 8.7</p>
+            </div>
+
+            <div class="profile-card">
+                <img src="halammma.jpg" alt="Student Photo">
+                <h3>Ms Haalamma H</h3>
+                <p>USN: 710CS23013</p>
+                <p>CGPA: 8.5</p>
+            </div>
+
+            <div class="profile-card">
+                <img src="harsha.jpg" alt="Student Photo">
+                <h3>Mr Harsha TS</h3>
+                <p>USN: 710CS23015</p>
+                <p>CGPA: 8.7</p>
+            </div>
+
+            <div class="profile-card">
+                <img src="jeevan.jpg" alt="Student Photo">
+                <h3>Mr Jeevan TS</h3>
+                <p>USN: 710CS23016</p>
+                <p>CGPA: 8.5</p>
+            </div>
+
+            <div class="profile-card">
+                <img src="kavya.jpg" alt="Student Photo">
+                <h3>Ms Kavya KR</h3>
+                <p>USN: 710CS23018</p>
+                <p>CGPA: 8.7</p>
+            </div>
+
+            <div class="profile-card">
+                <img src="laks.jpg" alt="Student Photo">
+                <h3>Ms Lakshmi P</h3>
+                <p>USN: 710CS23020</p>
+                <p>CGPA: 8.5</p>
+            </div>
+
+            <div class="profile-card">
+                <img src="madhu.jpg" alt="Student Photo">
+                <h3>Mr Madhu</h3>
+                <p>USN: 710CS23021</p>
+                <p>CGPA: 8.7</p>
+            </div>
+
+            <div class="profile-card">
+                <img src="ppt.jpg" alt="Student Photo">
+                <h3>Mr Mahanthesh HB</h3>
+                <p>USN: 710CS23023</p>
+                <p>CGPA: 8.5</p>
+            </div>
+
+            <div class="profile-card">
+                <img src="manoj.jpg" alt="Student Photo">
+                <h3>Mr Manoj MC</h3>
+                <p>USN: 710CS23024</p>
+                <p>CGPA: 8.7</p>
+            </div>
+
+            <div class="profile-card">
+                <img src="ppt.jpg" alt="Student Photo">
+                <h3>MR Manoj Vinayaka Sunkadakatti</h3>
+                <p>USN: 710CS23025</p>
+                <p>CGPA: 8.5</p>
+            </div>
+
+            <div class="profile-card">
+                <img src="ppt.jpg" alt="Student Photo">
+                <h3>Mr Manu PY</h3>
+                <p>USN: 710CS23026</p>
+                <p>CGPA: 8.7</p>
+            </div>
+
+            <div class="profile-card">
+                <img src="shoyeb.jpg" alt="Student Photo">
+                <h3>Mr Mohammed Shoyab HR</h3>
+                <p>USN: 710CS23027</p>
+                <p>CGPA: 8.5</p>
+            </div>
+
+            <div class="profile-card">
+                <img src="ppt.jpg" alt="Student Photo">
+                <h3>Mr Mourya KS</h3>
+                <p>USN: 710CS23028</p>
+                <p>CGPA: 8.7</p>
+            </div>
+
+            <div class="profile-card">
+                <img src="muzamil.jpg" alt="Student Photo">
+                <h3>Mr Muzzamil N</h3>
+                <p>USN: 710CS23029</p>
+                <p>CGPA: 8.5</p>
+            </div>
+
+            <div class="profile-card">
+                <img src="ppt.jpg" alt="Student Photo">
+                <h3>Mr Nithin BM</h3>
+                <p>USN: 710CS23031</p>
+                <p>CGPA: 8.7</p>
+            </div>
+
+            <div class="profile-card">
+                <img src="pavan.jpg" alt="Student Photo">
+                <h3>Mr Pavankumar CM</h3>
+                <p>USN: 710CS23032</p>
+                <p>CGPA: 8.5</p>
+            </div>
+
+            <div class="profile-card">
+                <img src="VENKI.jpg" alt="Student Photo">
+                <h3>Mr Poojar Venkatesh</h3>
+                <p>USN: 710CS23033</p>
+                <p>CGPA: 8.7</p>
+            </div>
+
+            <div class="profile-card">
+                <img src="ppt.jpg" alt="Student Photo">
+                <h3>Mr PrajwalNaik R</h3>
+                <p>USN: 710CS23034</p>
+                <p>CGPA: 8.5</p>
+            </div>
+
+            <div class="profile-card">
+                <img src="ppt.jpg" alt="Student Photo">
+                <h3>Mr Prakash JS</h3>
+                <p>USN: 710CS23035</p>
+                <p>CGPA: 8.7</p>
+            </div>
+
+            <div class="profile-card">
+                <img src="ppt.jpg" alt="Student Photo">
+                <h3>Mr Prathap Naik C</h3>
+                <p>USN: 710CS23036</p>
+                <p>CGPA: 8.5</p>
+            </div>
+
+            <div class="profile-card">
+                <img src="praveen.jpg" alt="Student Photo">
+                <h3>Mr Praveena KL</h3>
+                <p>USN: 710CS23037</p>
+                <p>CGPA: 8.7</p>
+            </div>
+
+            <div class="profile-card">
+                <img src="PREETHAM2.jpg" alt="Student Photo">
+                <h3>Mr Preetham KS</h3>
+                <p>USN: 710CS23038</p>
+                <p>CGPA: 8.5</p>
+            </div>
+
+            <div class="profile-card">
+                <img src="preetham.jpg" alt="Student Photo">
+                <h3>Mr Preetham M</h3>
+                <p>USN: 710CS23039</p>
+                <p>CGPA: 8.7</p>
+            </div>
+
+            <div class="profile-card">
+                <img src="priya.jpg" alt="Student Photo">
+                <h3>Ms Priyanka B</h3>
+                <p>USN: 710CS23040</p>
+                <p>CGPA: 8.5</p>
+            </div>
+
+            <div class="profile-card">
+                <img src="ppt.jpg" alt="Student Photo">
+                <h3>Ms Priyanka BJ</h3>
+                <p>USN: 710CS23041</p>
+                <p>CGPA: 8.7</p>
+            </div>
+
+            <div class="profile-card">
+                <img src="ppt.jpg" alt="Student Photo">
+                <h3>Mr Punith Kumar BM</h3>
+                <p>USN: 710CS23042</p>
+                <p>CGPA: 8.5</p>
+            </div>
+
+            <div class="profile-card">
+                <img src="ppt.jpg" alt="Student Photo">
+                <h3>Mr Rahul H</h3>
+                <p>USN: 710CS23043</p>
+                <p>CGPA: 8.7</p>
+            </div>
+
+            <div class="profile-card">
+                <img src="raju.jpg" alt="Student Photo">
+                <h3>Mr Rajalingam C</h3>
+                <p>USN: 710CS23044</p>
+                <p>CGPA: 8.5</p>
+            </div>
+
+            <div class="profile-card">
+                <img src="ppt.jpg" alt="Student Photo">
+                <h3>Mr Rakesh N</h3>
+                <p>USN: 710CS23045</p>
+                <p>CGPA: 8.7</p>
+            </div>
+
+            <div class="profile-card">
+                <img src="ppt.jpg" alt="Student Photo">
+                <h3>Ms Ramya KV</h3>
+                <p>USN: 710CS23046</p>
+                <p>CGPA: 8.5</p>
+            </div>
+
+            <div class="profile-card">
+                <img src="ppt.jpg" alt="Student Photo">
+                <h3>Mr Rohith R</h3>
+                <p>USN: 710CS23048</p>
+                <p>CGPA: 8.7</p>
+            </div>
+
+            <div class="profile-card">
+                <img src="sahana.jpg" alt="Student Photo">
+                <h3>Ms Sahana M</h3>
+                <p>USN: 710CS23050</p>
+                <p>CGPA: 8.5</p>
+            </div>
+
+            <div class="profile-card">
+                <img src="sanjay.jpg" alt="Student Photo">
+                <h3>Mr Sanjay R</h3>
+                <p>USN: 710CS23051</p>
+                <p>CGPA: 8.7</p>
+            </div>
+
+            <div class="profile-card">
+                <img src="ppt.jpg" alt="Student Photo">
+                <h3>Mr Sanju H</h3>
+                <p>USN: 710CS23052</p>
+                <p>CGPA: 8.5</p>
+            </div>
+
+            <div class="profile-card">
+                <img src="shambu.jpg" alt="Student Photo">
+                <h3>Mr Shambulingesha NB</h3>
+                <p>USN: 710CS23053</p>
+                <p>CGPA: 8.5</p>
+            </div>
+
+            <div class="profile-card">
+                <img src="ppt.jpg" alt="Student Photo">
+                <h3>Mr Siddesh CS</h3>
+                <p>USN: 710CS23056</p>
+                <p>CGPA: 8.7</p>
+            </div>
+
+            <div class="profile-card">
+                <img src="ppt.jpg" alt="Student Photo">
+                <h3>MS Srujana M</h3>
+                <p>USN: 710CS2357</p>
+                <p>CGPA: 8.5</p>
+            </div>
+
+            <div class="profile-card">
+                <img src="suprith.jpg" alt="Student Photo">
+                <h3>Mr Suprith MS </h3>
+                <p>USN: 710CS23058</p>
+                <p>CGPA: 8.7</p>
+            </div>
+
+            <div class="profile-card">
+                <img src="vasista.jpg" alt="Student Photo">
+                <h3>Mr Vasista KM</h3>
+                <p>USN: 710CS23060</p>
+                <p>CGPA: 8.5</p>
+            </div>
+
+            <div class="profile-card">
+                <img src="vidya.jpg" alt="Student Photo">
+                <h3>Ms Vidyashree B</h3>
+                <p>USN: 710CS23061</p>
+                <p>CGPA: 8.7</p>
+            </div>
+
+            <div class="profile-card">
+                <img src="ppt.jpg" alt="Student Photo">
+                <h3>Mr Vinayaka S</h3>
+                <p>USN: 710CS23062</p>
+                <p>CGPA: 8.5</p>
+            </div>
+
+            <div class="profile-card">
+                <img src="VISHWAS.jpg" alt="Student Photo">
+                <h3>Mr Vishwas DM</h3>
+                <p>USN: 710CS23063</p>
+                <p>CGPA: 8.7</p>
+            </div>
+
+            <!-- Add more profiles here following the same structure -->
+        </div>
+    </div>
+</body>
+</html>
