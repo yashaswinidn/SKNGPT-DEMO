@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Shri Kengappa Nayaka Government Polytechnic</title>
+    <style>
+        /* Importing Google Fonts */
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+        
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url('college.jpg'); /* Update this path */
+            background-size: cover;
+            background-position: center;
+            font-family: 'Poppins', sans-serif;
+            color: #fff;
+            overflow-x: hidden;
+        }
+
+        .overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.6);
+            z-index: -1;
+        }
+
+        .header {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        .header img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            border: 5px solid #fff;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            margin-bottom: 20px;
+        }
+
+        .title {
+            font-family: 'Forte', cursive;
+            color: #fff;
+            font-size: 2.5rem;
+            text-align: center;
+            text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.4);
+            background: linear-gradient(to right, #ff6b6b, #f8c291);
+            padding: 10px 20px;
+            border-radius: 30px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .departments {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 40px;
+            padding: 50px 0;
+        }
+
+        .department {
+            border-radius: 15px;
+            padding: 20px;
+            width: 250px;
+            text-align: center;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s, box-shadow 0.3s;
+            text-decoration: none;
+            color: #fff;
+        }
+
+        .department img {
+            width: 120px;
+            height: 100px;
+            margin-bottom: 15px;
+            border-radius: 10px;
+            border: 3px solid #fff;
+        }
+
+        .department h2 {
+            margin: 0;
+            font-size: 1.5rem;
+        }
+
+        .department button {
+            background-color: #fff;
+            border: none;
+            border-radius: 8px;
+            padding: 10px 20px;
+            font-size: 1.1rem;
+            color: #000;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .department button:hover {
+            background-color: #ddd;
+        }
+
+        .department:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+        }
+
+        .dept-cse {
+            background: linear-gradient(to bottom right, #ff9a8b, #ff6a00); /* Orange and pink gradient */
+        }
+
+        .dept-ece {
+            background: linear-gradient(to bottom right, #4facfe, #00f2fe); /* Blue gradient */
+        }
+
+        .dept-me {
+            background: linear-gradient(to bottom right, #a1c4fd, #c2e9fb); /* Light blue gradient */
+        }
+
+        footer {
+            background: #2d3436;
+            padding: 20px 0;
+            color: #fff;
+            text-align: center;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="overlay"></div>
+
+    <div class="header">
+        <!-- Rounded College Logo -->
+        <img src="collegelogo.png" alt="College Logo">
+        <h1 class="title">Shri Kengappa Nayaka Government Polytechnic</h1>
+    </div>
+
+    <div class="departments">
+        <div class="department dept-cse">
+            <a href="login.html">
+                <img src="cselogo.jpg" alt="CSE Department">
+                <h2>Dept Of CSE</h2>
+                <button type="button">Explore More</button>
+            </a>
+        </div>
+        <div class="department dept-ece">
+            <a href="ece.html">
+                <img src="ecelogo.jpg" alt="ECE Department">
+                <h2>Dept of ECE</h2>
+                <button type="button">Explore More</button>
+            </a>
+        </div>
+        <div class="department dept-me">
+            <a href="sc.html">
+                <img src="Maths.jpg" alt="Maths Department">
+                <h2>Dept of Maths</h2>
+                <button type="button">Explore More</button>
+            </a>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2024 Shri Kengappa Nayaka Government Polytechnic. All rights reserved.
+    </footer>
+</body>
+</html>

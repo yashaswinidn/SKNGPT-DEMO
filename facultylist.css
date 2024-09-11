@@ -1,0 +1,79 @@
+/* styles.css */
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(to right, #ffafbd, #ffc3a0);
+    margin: 0;
+    padding: 20px;
+}
+
+.faculty-list {
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #34495e;
+    font-size: 36px;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+
+.faculty-member {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    padding: 20px;
+    border-radius: 15px;
+    background-color: #f1f1f1;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.faculty-member:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+    background-color: #e3e3e3;
+}
+
+.faculty-member img {
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    margin-right: 20px;
+    border: 5px solid #3498db;
+    transition: border-color 0.3s ease;
+}
+
+.faculty-member img:hover {
+    border-color: #2980b9;
+}
+
+.faculty-member .info h2 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.faculty-member .info h2 a {
+    color: #34495e;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.faculty-member .info h2 a:hover {
+    color: #2980b9;
+}
+
+.faculty-member .info p {
+    margin: 5px 0;
+    color: #7f8c8d;
+    font-size: 16px;
+}
+
+.faculty-member .info p:hover {
+    color: #2c3e50;
+}

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Students by Year</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+            background-size: 200% 200%;
+            animation: gradientShift 15s ease infinite;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        @keyframes gradientShift {
+            0% { background-position: 0% 0%; }
+            50% { background-position: 100% 100%; }
+            100% { background-position: 0% 0%; }
+        }
+
+        .header {
+            width: 100%;
+            background: linear-gradient(135deg, #6a1b9a, #ab47bc);
+            padding: 20px;
+            text-align: center;
+            color: #ffffff;
+            font-size: 32px;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            animation: fadeInDown 2s ease-in-out, headerPulse 2s infinite alternate, textGlow 1.5s infinite alternate;
+        }
+
+        .header img {
+            width: 100px;
+            height: auto;
+            margin-bottom: 10px;
+            animation: logoPulse 2s infinite alternate;
+        }
+
+        @keyframes logoPulse {
+            0% { transform: scale(1); }
+            100% { transform: scale(1.1); }
+        }
+
+        @keyframes fadeInDown {
+            from { opacity: 0; transform: translateY(-30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes headerPulse {
+            0% { transform: scale(1); }
+            100% { transform: scale(1.1); }
+        }
+
+        @keyframes textGlow {
+            0% { text-shadow: 0 0 10px #ffffff; }
+            100% { text-shadow: 0 0 20px #ff80ab; }
+        }
+
+        .container {
+            width: 80%;
+            margin-top: 40px;
+            text-align: center;
+        }
+
+        .year-section {
+            background-color: #ffffff;
+            border: 1px solid #dddddd;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            text-decoration: none;
+            color: inherit;
+            display: block; /* Make the link act as a block element */
+        }
+
+        .year-section:hover {
+            transform: scale(1.02);
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .year-section h2 {
+            margin: 0;
+            font-size: 24px;
+            color: #333;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .back-link {
+            margin-top: 20px;
+            font-size: 18px;
+            color: #ffffff;
+            text-decoration: none;
+            background: #6a1b9a;
+            padding: 10px 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            transition: background 0.3s ease;
+        }
+
+        .back-link:hover {
+            background: #ab47bc;
+        }
+    </style>
+</head>
+<body>
+
+<div class="header">
+    <img src="cselogo.jpg" alt="CS Logo"> <!-- Replace with your logo path -->
+    Department of Electronics and Communications
+</div>
+
+<div class="container">
+    <a href="EC1styearstudentlist.html" class="year-section">
+        <h2>1st Year Students</h2>
+        <p>Welcome to the 1st Year Students section. Here you can find information and resources specifically for first-year students.</p>
+    </a>
+
+    <a href="EC2ndyearstudentlist.html" class="year-section">
+        <h2>2nd Year Students</h2>
+        <p>Welcome to the 2nd Year Students section. Here you can find information and resources specifically for second-year students.</p>
+    </a>
+
+    <a href="EC3rdyearstudentlist.html" class="year-section">
+        <h2>3rd Year Students</h2>
+        <p>Welcome to the 3rd Year Students section. Here you can find information and resources specifically for third-year students.</p>
+    </a>
+
+    <a href="skngpt.html" class="back-link">Back to Main Page</a>
+</div>
+
+</body>
+</html>
